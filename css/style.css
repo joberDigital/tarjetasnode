@@ -1,0 +1,359 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding: 20px; 
+}
+
+/* Tarjeta contenedor principal */
+.contenedor {
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 98%;
+  max-width: 900px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform 0.2s ease;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.contenedor:hover {
+  transform: translateY(-5px);
+}
+
+/* Contenedor de columnas (imagen + texto) */
+.card-two-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* Columnas individuales */
+.col {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(4px);
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+/* Imagen */
+.card-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Título */
+.subtitulo h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+/* Texto Wikipedia */
+.parrafo {
+  font-size: 0.95em;
+  line-height: 1.6;
+  padding: 20px;
+  margin-top: 10px;
+  color: #c82828;
+  text-align: start;
+  text-shadow: 3px 3px 3px var(--footer-color, #999);
+}
+
+/* Lista */
+.card-list {
+  padding-left: 20px;
+  margin: 105px ;
+  max-width: 400px;
+  text-align: start;
+  color: #444;
+}
+
+.card-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Botones de acción */
+.card-buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-buttons button {
+  padding: 8px 12px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-buttons button:hover {
+  background: #0056b3;
+}
+
+/* Selector de idioma */
+.idioma-selector {
+  margin-top: 1rem;
+}
+
+.lang-btn {
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 0.3rem 0.6rem;
+  margin-right: 0.3rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85em;
+}
+
+.lang-btn:hover {
+  background: #ddd;
+  font-weight: bold;
+}
+
+/* Footer */
+footer.footer1 {
+  background-color: #222;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  width: 98%;
+  margin-top: 2rem;
+}
+
+footer.footer1 a {
+  color: #00aced;
+  text-decoration: none;
+}
+
+footer.footer1 ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+     flex-direction: row; 
+
+}
+
+footer.footer1 ul li a {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+footer.footer1 ul li a:hover {
+  color: #ccc;
+}
+  .compartir-post {
+  width: 100%;
+  margin: 15px;
+    margin-bottom:20px;
+  }
+.compartir-post ul {
+  padding: 0;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.compartir-post li {
+  display: flex;
+  width: 100%;
+  opacity: 0.8;
+  transition: all 0.5s ease-out;
+  z-index: 999;
+
+}
+.compartir-post li:hover {
+  opacity: 1;
+}
+
+.compartir-post li a {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 5px;
+  margin-right: 0;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.88), 0 2px 7px 0 rgba(0, 0, 0, 0.08), 0 3px 2px 3px rgba(0, 0, 0, 0.09);
+  color: var(--cards-color);
+  display: flex;
+  transition: all 0.5s ease-out;
+  align-items: center;
+  flex-basis: 100%;
+  justify-content: center;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.compartir-post li a:hover {
+  box-shadow: 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.compartir-post b {
+  font-weight: 500;
+  margin: 0 15px;
+  font-size: 10px;
+  font-family: system-ui;
+}
+
+.compartir-post i {
+  display: flex;
+  margin-top: -2px;
+  
+}
+
+.compartir-post li:hover {
+  margin-top: -7px;
+  transition: all 0.5s ease-out;
+}
+
+.compartir-post li .twitter {
+  background-color: var(--color-titulo);
+}
+
+.compartir-post li .facebook {
+  background-color: #4867aa;
+}
+
+.compartir-post li .xmail {
+  background-color: #08c;
+}
+
+.compartir-post li .youtube {
+  background-color: #c82828;
+}
+
+.compartir-post li .wa {
+  background: #8dc143;
+}
+
+.compartir-post li .tumblr {
+  background-color: rgba(48, 78, 108, 0.98);
+}
+
+.compartir-post li .facebook:hover,
+.compartir-post li .youtuve:hover,
+.compartir-post li .twitter:hover {
+  color: var(--cards-color);
+}
+
+.compartir-post li:last-child {
+  margin-right: 0;
+  
+}
+
+          
+              .header1 {
+      /* background: linear-gradient(135deg, #f5f5f5, #e0e0e0); */
+      background-color: rgba(255, 255, 255, 0.4); /* semi-transparent bg */
+  backdrop-filter: blur(4px); /* blur only what's behind */
+  -webkit-backdrop-filter: blur(4px); /* for Safari support */
+border:3px double  #ccc;
+      padding: 20px 20px;
+      text-align: end;
+      overflow: hidden;
+      border-radius: 10px;
+
+    }
+  
+    .headerPrincipal-titulo {
+      font-size: 2.5rem;
+      margin: 0;
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: fadeSlideIn 1s ease-out forwards;
+    }
+  
+    .headerPrincipal-img {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-left: 15px;
+      opacity: 0;
+      transform: scale(0.8);
+      animation: popIn 1s ease-out 0.5s forwards;
+    }
+  
+    @keyframes fadeSlideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    @keyframes popIn {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  
+
+
+    
+    h1 {
+      margin-bottom: 30px;
+      color: #333;
+    }
+    
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    .card-link {
+      text-decoration: none;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      width: 200px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    
+    .card-link:hover {
+      transform: scale(1.05);
+    }
+    
+    .card-link img {
+      width: 100%;
+      border-radius: 6px;
+    }
+    
+    .card-link p {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+    }
